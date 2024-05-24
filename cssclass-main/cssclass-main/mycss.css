@@ -1,0 +1,26 @@
+body {
+    background-color: antiquewhite;
+    font-family: Arial, "Trebuchet MS, sans-serif";
+    margin:0px;
+   }
+   header{
+    background-color: aliceblue;
+    color:black;
+    text-align: center;
+    padding:5px
+
+   }
+   h1{margin:0px}
+section#main{
+    float:right; width:70%; height:200x; background-color:yellow;}
+    nav {
+        float:left;
+        width: 70% height 200px; background-color: #ffd800;}
+        footer{
+            background-color:#954b4b; color:#efe5d0; text-align:center; padding:10px; margin: 0px 0px 0px 0px; font-size: 90%; clear:both;}
+
+ @media screen and (max-width:500px){
+
+    nav{width:100%;}
+    section#main{width:100%;}
+ }
