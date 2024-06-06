@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    background-color: #333;
+    color: white;
+    padding: 16px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #444;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    padding: 8px 16px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar ul li a:hover {
+    background-color: #575757;
+}
+
+.content, .products, .about, .contact {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.content {
+    background-color: #f4f4f4;
+}
+
+.products {
+    background-color: #e2e2e2;
+}
+
+.about {
+    background-color: #d0d0d0;
+}
+
+.contact {
+    background-color: #b8b8b8;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 16px;
+}
+
+/* 반응형 디자인을 위한 미디어 쿼리 */
+@media screen and (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+    }
+}
+
