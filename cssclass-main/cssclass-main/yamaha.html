@@ -3,15 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Erin's Guitar Shop</title>
-    <link rel="stylesheet" href="animation.css">
+    <title>Document</title>
     <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
         }
         
         #header {
@@ -53,19 +49,37 @@
             background-color: antiquewhite;
             padding: 40px;
             text-align: center;
-            flex: 1; /* Ensure main takes available space */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #guitar-gallery {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        #guitar-gallery img {
+            max-width: 200px;
+            height: auto;
+            border: 1px solid #ccc;
+            padding: 10px;
+            background-color: white;
         }
 
         #footer {
             background-color: #333;
             color: white;
-            padding: 20px;
-            text-align: left;
-            width: 100%;
+            padding: 50px;
+            text-align: center;
         }
-
-        /* Media Queries */
         @media (max-width: 768px) {
+            #main {
+                padding: 150px;
+            }
             #navbar ul li {
                 display: block;
                 padding: 10px 0;
@@ -80,7 +94,7 @@
                 padding: 20px;
             }
             #footer {
-                padding: 10px;
+                padding: 20px;
             }
             h1 {
                 font-size: 1.5em;
@@ -116,29 +130,35 @@
         </div>
 
         <div id="main">
-            <div id="home">
-                <h2>Welcome to Erin's Guitar Shop. <br>
-                    Discover the best guitars and accessories here.</h2>
-                <h3>
-                    예린이의 기타 가계에 오신것을 환영합니다. 저희 가계는 최고의 기타만 판매합니다. <br />
-                </h3>
-                <p>
-                    Welcome to <strong>Erin's Guitar Shop</strong>, your ultimate destination for high-quality guitars and accessories. Located in the heart of the city, we pride ourselves on offering a wide selection of guitars from renowned brands like Fender, Gibson, Yamaha, and Epiphone. Whether you're a seasoned musician or a beginner looking to start your musical journey, our shop has something for everyone.
-                </p>
-                <p>
-                    At Erin's Guitar Shop, we are passionate about music and committed to providing our customers with the best instruments and customer service. Our knowledgeable staff is always ready to assist you in finding the perfect guitar that suits your style and preferences. We also offer a range of accessories, including strings, picks, cases, and amplifiers, to ensure you have everything you need for an exceptional playing experience.
-                </p>
-                <p>
-                    Explore our collection, discover the joy of playing a high-quality instrument, and join our community of music enthusiasts. We look forward to welcoming you to <strong>Erin's Guitar Shop</strong>, where your musical dreams come to life.
-                </p>
+            <h3>
+                <img src="yamahalogo.png" alt="Yamaha Logo">
+            </h3>
+            악기, 오디오, 음향기기, 반도체 등을 만드는 일본 굴지의 음향 기업이다. 
+            악기의 매출로는 독보적인 세계 1위를 차지하고 있다. 야마하의 엔진 사업부는 
+            야마하 발동기로 분사되었으며, 오토바이, 엔진, 로봇 등의
+            중기계를 만들고 있다.
+            <h2></h2>
+            <br/>
+            <h3>야마하 기타 판매 목록</h3>
+            <div id="guitar-gallery">
+               
+                <div class="guitar-item">
+                    <img src="yamaha1.jpeg" alt="Yamaha Guitar 1">
+                    <p>Price: $500</p>
+                </div>
+                <div class="guitar-item">
+                    <img src="yamaha2.jpeg" alt="Yamaha Guitar 2">
+                    <p>Price: $600</p>
+                </div>
+                <div class="guitar-item">
+                    <img src="yamaha3.jpeg" alt="Yamaha Guitar 3">
+                    <p>Price: $700</p>
+                </div>
             </div>
         </div>
 
         <div id="footer">
-            <h5>Erin's Guitar Shop<br>
-                Contact: erinsguitarshop@gmail.com<br>
-                Phone number: 2320-2304-1199
-            </h5>
+            <h2>Footer</h2>
         </div>
     </div>
 </body>
