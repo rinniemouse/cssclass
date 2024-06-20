@@ -5,11 +5,159 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-</div>
-<div id="gibson">
-    <h2>Gibson</h2>
-    <p>Gibson guitars offer a unique blend of style and performance.</p>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+    
+    #header {
+        background-color:paleturquoise;
+        color: palevioletred;
+        padding: 20px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
 
-</body>
+    }
+
+    #navbar {
+            background-color: black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        #navbar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        #navbar ul li {
+            display: inline;
+            text-transform: uppercase;
+            padding: 0 10px;
+            letter-spacing: 2px;
+        }
+
+        #navbar ul li a {
+            text-decoration: none;
+            color:antiquewhite;
+        }
+
+        #main {
+            background-color: antiquewhite;
+            padding: 40px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+            #guitar-gallery {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+          #guitar-gallery img {
+            max-width: 200px;
+            height: auto;
+            border: 1px solid #ccc;
+            padding: 10px;
+            background-color: white;
+        }
+          
+      
+
+        #footer {
+            background-color: #333;
+            color: white;
+            padding: 50px;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            #main {
+                padding: 150px;
+            }
+            #navbar ul li {
+                display: block;
+                padding: 10px 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            #header {
+                padding: 10px;
+            }
+            #main {
+                padding: 20px;
+            }
+            #footer {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 1.5em;
+            }
+            h2 {
+                font-size: 1.2em;
+            }
+            h3 {
+                font-size: 1em;
+            }
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+</style>
+<body>
+    <body>
+        <div id="page">
+            <div id="header">
+                <h1>Erin's Guitar Shop</h1>
+                <h2>예린이의 기타 가게</h2>
+            </div>
+    
+            <div id="navbar">
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="fender.html">Fender</a></li>
+                    <li><a href="gibson.html">Gibson</a></li>
+                    <li><a href="yamaha.html">Yamaha</a></li>
+                    <li><a href="ephiphone.html">Epiphone</a></li>
+                </ul>
+            </div>
+
+            <div id="main">
+                <h3>
+                    <img src="gibson.jpeg" alt="gibson Logo">
+                </h3>
+    
+                <h3> 미국의 악기 제조사 및 브랜드로.
+                    펜더와 함께 일렉트릭 기타 브랜드의 두 정상으로 여겨지는 100년이 넘는 유서 깊은 역사를 가지고 있다.
+                    그리고 동시에 헤비쉐입 기타의 아버지로 플라잉 V, 익스플로러, 모던같은 특이한 형태의 일렉트릭 기타들을 출시하는 등 보수적인 브랜드라는 
+                      편견과는 달리 과거부터 현재까지도 나름 혁신적인 악기제작 방식들을 실험해오고 있는 브랜드이기도 하다.
+                </h3>
+                <br/>
+                <div id="guitar-gallery">
+                    <div class="guitar-item">
+                        <img src="gibson1.jpeg" alt="Gibson Guitar 1">
+                        <p>Price: $500</p>
+                    </div>
+                    <div class="guitar-item">
+                        <img src="gibson2.webp" alt="Gibson Guitar 2">
+                        <p>Price: $600</p>
+                    </div>
+                    <div class="guitar-item">
+                        <img src="gibson3'.jpeg" alt="Gibson Guitar 3">
+                        <p>Price: $700</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
