@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Erin's Guitar Shop - Home of the finest guitar brands.">
+    <title>Erin's Guitar Shop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary-bg-color: paleturquoise;
+            --primary-text-color: palevioletred;
+            --navbar-bg-color: black;
+            --navbar-text-color: antiquewhite;
+            --main-bg-color: antiquewhite;
+            --footer-bg-color: #333;
+            --footer-text-color: white;
+            --headerfont: 'Indie Flower', cursive;
+            --korean-font: 'Noto Sans KR', sans-serif;
+            --header-title-font-size: 5em;
+            --header-subtitle-font-size: 1.5em;
+            
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color:cadetblue;
+            background-color: var(--main-bg-color);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #header {
+            background-color: var(--primary-bg-color);
+            color: var(--primary-text-color);
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: "Indie Flower"; /* Apply the custom font */
+        }
+        #header h1 {
+            font-size:60px;
+            margin-bottom: 0.1em; 
+        }/* Increase title size */
+            
+        
+        #header h2 {
+            font-family:  'Noto Sans KR', sans-serif; /* Apply the Korean font */
+            font-size: 30px; /* Increase subtitle size */
+            margin-top: 0; /* Reduce the margin above the subtitle */
+        }
+
+        nav {
+            background-color: var(--navbar-bg-color);
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            text-transform: uppercase;
+            padding: 0 10px;
+            letter-spacing: 2px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: var(--navbar-text-color);
+        }
+
+        #logo-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+            margin-top:30px;
+        }
+
+        #logo {
+            max-width: 200px; /* Adjust size as needed */
+            width: 100%; /* Ensure it scales within its container */
+            height: auto;
+        }
+
+        main {
+            padding: 40px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: "Indie Flower";
+        }
+
+        #guitar-gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .guitar-item {
+            text-align: center;
+            max-width: 100%; /* Adjusted max-width for responsiveness */
+        }
+
+        .guitar-item img {
+            width: 100%;
+            height: auto;
+            border: 1px solid #ccc;
+            padding: 10px;
+            background-color: white;
+        }
+
+        .button-container {
+            margin-top: 10px;
+        }
+
+        .button-container a {
+            display: inline-block;
+            text-decoration: none;
+            padding: 10px 20px; /* Increased padding for bigger button */
+            background-color: paleturquoise;
+            border: none;
+            border-radius: 5px;
+            color: palevioletred;
+            font-size: 16px; /* Increased font size */
+            font-family: 'Noto Sans KR', sans-serif; /* Apply sans-serif font */
+            cursor: pointer;
+            text-align: center;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .button-container a:hover {
+            background-color: palevioletred;
+            color: paleturquoise;
+        }
+        #footer {
+            background-color: var(--footer-bg-color);
+            color: var(--footer-text-color);
+            padding: 50px; /* Adjust padding to match other sections */
+            text-align: left; /* Center align text */
+            margin-top: 20px; /* Add some top margin for separation */
+        }
+
+        @media (max-width: 768px) {
+            main {
+                padding: 150px;
+            }
+            #guitar-gallery {
+                grid-template-columns: 1fr; /* Adjusted for single column layout on smaller screens */
+            }
+        }
+
+        @media (max-width: 480px) {
+            #header {
+                padding: 10px;
+            }
+            main {
+                padding: 20px;
+            }
+            #footer {
+                padding: 20px;
+            }
+            h1, h2, h3 {
+                font-size: 1.5em;
+            }
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="page">
+        <header id="header">
+            <h1>Erin's Guitar Shop</h1>
+            <h2>예린이의 기타 가게</h2>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="fender.html">Fender</a></li>
+                <li><a href="gibson.html">Gibson</a></li>
+                <li><a href="yamaha.html">Yamaha</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+
+        <div id="logo-container">
+            <img id="logo" src="fenderguitarpng/new gibson/logo.png" alt="Fender Logo">
+        </div>
+
+        <main>
+            <div id="guitar-gallery">
+                <div class="guitar-item">
+                    <img src="fenderguitarpng/new gibson/gibson1.jpg" alt="Fender Guitar 1">
+                    <div class="button-container"><a href="fender1.html">Flying V Red - $15000</a></div>
+                </div>
+                <div class="guitar-item">
+                    <img src="fenderguitarpng/new gibson/gibson2.jpg" alt="Fender Guitar 2">
+                    <div class="button-container"><a href="fender2.html">Flying V Black - $36000</a></div>
+                </div>
+                <div class="guitar-item">
+                    <img src="fenderguitarpng/new gibson/gibson3.webp" alt="Fender Guitar 3">
+                    <div class="button-container"><a href="fender3.html">Flying Bird Red - $17000</a></div>
+                </div>
+                <div class="guitar-item">
+                    <img src="fenderguitarpng/new gibson/gibson11.jpg" alt="Fender Guitar 4">
+                    <div class="button-container"><a href="fender4.html">Flying V WHite - $18000</a></div>
+                </div>
+            </div>
+        </main>
+
+        <footer id="footer">
+            <p>Email: erinsguitarshop@example.com</p>
+            <p>Contact: 010-9392-0402</p>
+            <p>Instagram: @erinslittleworlds</p>
+        </footer>
+    </div>
+</body>
+</html>

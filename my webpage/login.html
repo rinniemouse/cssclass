@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erin's Guitar Shop - Login</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        #header {
+            background-color: paleturquoise;
+            color: palevioletred;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #navbar {
+            background-color: black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        #navbar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        #navbar ul li {
+            display: inline;
+            text-transform: uppercase;
+            padding: 0 10px;
+            letter-spacing: 2px;
+        }
+
+        #navbar ul li a {
+            text-decoration: none;
+            color: antiquewhite;
+        }
+
+        #main {
+            background-color: antiquewhite;
+            padding: 40px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #login-form {
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            text-align: left;
+        }
+
+        #login-form h3 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        #login-form label {
+            display: block;
+            margin-bottom: 5px;
+            color: #666;
+        }
+
+        #login-form input[type="text"],
+        #login-form input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        #login-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: paleturquoise;
+            border: none;
+            border-radius: 5px;
+            color: palevioletred;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        #login-form button:hover {
+            background-color: palevioletred;
+            color: paleturquoise;
+        }
+
+        #footer {
+            background-color: #333;
+            color: white;
+            padding: 50px;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            #navbar ul li {
+                display: block;
+                padding: 10px 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            #header {
+                padding: 10px;
+            }
+
+            #main {
+                padding: 20px;
+            }
+
+            #footer {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 1.5em;
+            }
+
+            h2 {
+                font-size: 1.2em;
+            }
+
+            h3 {
+                font-size: 1em;
+            }
+
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="page">
+        <div id="header">
+            <h1>Erin's Guitar Shop</h1>
+            <h2>예린이의 기타 가게</h2>
+        </div>
+
+        <div id="navbar">
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="fender.html">Fender</a></li>
+                <li><a href="gibson.html">Gibson</a></li>
+                <li><a href="yamaha.html">Yamaha</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+
+        <div id="main">
+            <form id="login-form">
+                <h3>Login to Your Account</h3>
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <p>Email: erinsguitarshop@example.com</p>
+        <p>Contact: 010-9392-0402</p>
+        <p>Instagram: @erinslittleworlds</p>
+    </footer>
+</body>
+</html>
